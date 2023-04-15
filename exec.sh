@@ -1,18 +1,19 @@
 #!/bin/bash
 
-
 # Define the path to the 'Addons' folder
 ADDONS_FOLDER="./Addons"
 
-# Function to execute the selected file
+# Function to execute the selected .sh or .py file
 function execute_panel() {
   selected_panel="$1"
-  
-  # Check if the selected panel is a .sh or .py file, and execute accordingly
-  if [[ "$selected_panel" == *.sh ]]; then
-    bash "$selected_panel"
-  elif [[ "$selected_panel" == *.py ]]; then
-    python3 "$selected_panel"
+  panel_folder=$(dirname "$selected_panel")
+  panel_name=$(basename "$panel_folder")
+  panel_file=$(basename "$selected_panel")
+  cd "$panel_folder"
+  if [[ "$panel_file" == *.sh ]]; then
+    bash "$panel_file"
+  elif [[ "$panel_file" == *.py ]]; then
+    python3 "$panel_file"
   else
     zenity --error --text="Invalid file type!"
     exit 1
