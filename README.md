@@ -31,6 +31,13 @@ To run Universal Interfacer, simply execute the script:
 
 ```bash UI.sh```
 
+## ALTERNATIVE-UI
+### `UI-GEN.sh` - Universal General UI from `.sh` files within "Addons" folder and sub folders, adding `[FOLDER]` prefix to selection, using script's folder name.
+
+<img src="https://i.imgur.com/ysdvfGt.png" alt="image">
+
+
+
 This will launch the universal list GUI that displays all the `*.sh` files from the `panels` folder. Use the arrow keys to navigate and select an item, and press Enter to run the corresponding `bash *.sh` command.
 
 ## Contributing
