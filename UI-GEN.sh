@@ -6,7 +6,8 @@ ADDONS_FOLDER="./Addons"
 # Function to execute the selected .sh file
 function execute_panel() {
   selected_panel="$1"
-  bash "$selected_panel"
+  cd "$(dirname "$selected_panel")"
+  bash "$(basename "$selected_panel")"
 }
 
 # Generate panel list based on .sh files in Addons folder
