@@ -39,4 +39,3 @@ selected_panel=$(zenity --list --title="Panel List" --text="Select a panel:" --c
 if [ -n "$selected_panel" ]; then
   execute_panel "$selected_panel"
 fi
-
