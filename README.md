@@ -1,7 +1,7 @@
 # Universal Interfacer
 
+<img src="https://i.imgur.com/55XSZKP.png" alt="image">
 
-<img src="https://i.imgur.com/ItEkLTz.png" alt="image">
 
 Universal Interfacer is a simple shell script that creates a universal list graphical user interface (GUI) in `Zenity` to list all `.sh` files from the `panels` folder. 
 It allows users to select an item from the list, and then runs the corresponding `bash file.sh` command.
