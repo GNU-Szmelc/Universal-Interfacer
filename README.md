@@ -1,6 +1,7 @@
 # Universal Interfacer
 
-Universal Interfacer is a simple shell script that creates a universal list graphical user interface (GUI) to list all `shell.sh` files from the `panels` folder. It allows users to select an item from the list, and then runs the corresponding `bash file.sh` command.
+Universal Interfacer is a simple shell script that creates a universal list graphical user interface (GUI) in `Zenity` to list all `.sh` files from the `panels` folder. 
+It allows users to select an item from the list, and then runs the corresponding `bash file.sh` command.
 
 ## Installation
 
